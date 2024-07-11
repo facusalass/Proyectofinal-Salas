@@ -1,0 +1,562 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Oswald:wght@200..700&family=Roboto+Slab:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+body{
+    background-image: url(../../multimedia/fondo.jpg);
+    background-repeat: none;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    box-sizing: border-box;
+    }
+/* header */
+.rounded-circle{
+    height: 45px;
+    width: 50px;
+    }
+    .logopao{
+    height: 50px;
+    width: 190px;
+    margin-bottom: 5px;
+}    
+.navbar{
+    background-color: #fbd1df;
+    border: solid rgb(0, 4, 8) 1px;
+}
+.navbar-nav{
+margin: 0 auto;
+color: black;
+font-weight: 600;
+}
+.nav-link{
+    font-family:  "Roboto Slab", serif;
+}
+.nav-item{
+    color: aliceblue;
+margin-right: 70px;
+ font-size:21px;
+}
+.nav-link:hover{
+    color: rgb(0, 255, 170);
+}
+
+  
+  @media (max-width: 991px) {
+    .navbar-brand {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    .navbar-toggler {
+      order:0;
+      position: relative;
+      top: 2px;
+      left: -20px;
+    }
+    .rounded-circle{
+      visibility: hidden;
+
+      }
+
+      .logopao{
+
+        height: 50px;
+        width: 210px;
+    }    
+
+    .navbar-collapse {
+      max-height: 125px; /* Ajusta según sea necesario */
+  }
+  }
+  @media(max-width:510px){
+    .navbar-toggler {
+        order: 1;
+        position: relative;
+        top: -5px;
+        height: 15px;
+        left: 95px;
+      }
+      .navbar-toggler {
+        order: 0;
+        position: relative;
+        top: -2px;
+        left: -10px;
+       margin-bottom: 10px;
+      }
+      .navbar-nav.custom-menu {
+    display: block;
+        justify-content: center;
+      }
+      .carro{
+        display: flex;
+        justify-content: flex-start;
+        top: 0px;
+left: 5px;
+         }
+  }
+  @media(max-width:474px){
+    .navbar-toggler {
+      order: 0;
+      position: relative;
+      top: -2px;
+      left: -20px;
+    }
+
+      .zorro{
+        height: 250px;
+        width: 90%;
+        }
+        .navbar-brand {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+          }
+       
+  }
+  @media(max-width:560px){
+    .logopao{
+        height: 50px;
+        width: 170px;
+    }
+  
+  }
+  @media(max-width:450px){
+    .logopao{
+        display: flex;
+  justify-content: right;
+  margin-left: 215px;
+    }
+  }
+
+  @media(max-width:380px){
+    .logopao{
+  margin-left: 170px;
+    }
+  }
+  @media(max-width:340px){
+    .logopao{
+      margin-left: 140px;
+        }
+  
+  }
+
+.carro{
+margin-right: 20px;
+font-size: 21px;
+color: black;
+margin-top: 2px;
+}
+/* header */
+h1{
+    display: flex;
+    justify-content: center;
+}
+
+.titulo2{
+font-family:  "Roboto Slab", serif;
+font-size: 29px;
+margin-top: 35px;
+text-shadow: black 1px 1px 1px;
+color: rgb(216, 124, 170);
+display: flex;
+justify-content: center; 
+}
+
+.presentacion{
+    background-image: url(../../multimedia/zorritofinal.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 230px;
+    border: solid rgb(104, 71, 29) 1px;
+}
+
+.zorro{
+height: 250px;
+width: 100%;
+}
+.imagen-productos{
+height: 290px;
+width: 310px;
+border: solid rgb(83, 49, 3) 3px;
+}
+.body {
+    font-family: sans-serif;
+  }
+  
+
+  .productos {
+    position: relative;
+    top: 20px;
+    justify-content: center;
+    margin: 40px auto;
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 60px;
+  }
+  
+  .producto {
+    background-color: #f3b6d2;
+    border: solid black 2px;
+    text-align: center;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .imagen-productos {
+    max-width: 100%;
+    width: 310px;
+    height:279px;
+    display: block;
+    margin: 0 auto 4px auto;
+    margin-top: 4px;
+  }
+  
+  .titulo-producto {
+    color: rgb(121, 54, 23);
+    text-shadow: rgb(253, 251, 251) 1px 1px 2px;
+    font-family: "Noto Sans", sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    margin: 0;
+  }
+  
+  .producto p {
+    color: rgb(227, 241, 232);
+    text-shadow: black 2px 1px 1px;
+    font-size: 22px;
+    font-weight: 700;
+    background-color: rgb(247, 176, 176);
+    margin: 10px 0 0 0;
+    border: solid black 1px;
+    padding: 5px;
+  }
+  
+  .comprar {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+.compra {
+    background-color: rgb(233, 156, 129);
+    color: rgb(221, 162, 206);
+    padding: 5px;
+    font-size: 20px;
+    font-weight: 700;
+border: solid black 2px;
+display: flex;
+justify-content: center;
+margin-top: 20px;
+  }
+  
+  .compra a {
+    text-decoration: none;
+    color: rgb(243, 52, 141);
+  }
+  
+  .compra a:hover {
+    color: rgb(247, 205, 166);
+  }
+
+
+  @media (max-width: 768px) {
+    .productos {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+  
+    .producto {
+      padding: 10px;
+    }
+  
+    .titulo-producto, .producto p {
+      font-size: 20px;
+    }
+  
+
+  }
+  .titulo2-comprar {
+    visibility: hidden;
+      }
+      .titulo2 {
+        text-align: center;
+        margin-top: 20px;
+        font-size: 30px;
+        margin-bottom: 50px;
+      }
+      .titulo1{
+
+        position: relative;
+        top: 80px;
+        color: rgb(235, 235, 235);
+        text-shadow: black 2px 2px 2px;
+        font-family: "Oswald", sans-serif;
+        font-size:55px;
+        text-align: center;
+        }
+      
+    
+  
+  @media (max-width: 480px) {
+    .productos {
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+  
+    .titulo-producto, .producto p {
+      font-size: 18px;
+    }
+    .titulo2-comprar {
+        visibility: hidden;
+          }
+        
+        
+
+
+          .titulo2 {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 29px;
+            margin-bottom: 20px;
+          }
+          .titulo1{
+
+            position: relative;
+            top: 80px;
+            color: rgb(235, 235, 235);
+            text-shadow: black 2px 2px 2px;
+            font-family: "Oswald", sans-serif;
+            font-size:45px;
+            text-align: center;
+            }
+          
+  }
+  @media (max-width: 478px) and (min-width: 398px) {
+    .productos {
+      grid-template-columns: 1fr;
+    }
+    .titulo2-comprar {
+        visibility: hidden;
+          }
+  
+  }
+  @media (min-width: 339px) and (max-width: 426px) {
+
+
+  }
+  
+  @media(max-width:338px){
+
+            .titulo2-comprar {
+visibility: hidden;
+  }
+
+
+  }
+  @media(min-width:769px){
+    
+    .titulo2 {
+        text-align: center;
+        margin-top: 20px;
+        font-size: 33px;
+        margin-bottom: 50px;
+      }
+      .titulo1{
+
+        position: relative;
+        top: 90px;
+        color: rgb(235, 235, 235);
+        text-shadow: black 2px 2px 2px;
+        font-family: "Oswald", sans-serif;
+        font-size:60px;
+        }
+  }
+  .agregar{
+font-size: 18px;
+background-color: rgb(172, 62, 50);
+color: aliceblue;
+font-family: "Noto Sans", sans-serif;
+font-weight: 600;
+width: 100%;
+height: 45px;
+border: solid 2px rgb(17, 17, 17);
+margin-top: 1px;
+cursor: pointer;
+  }
+  .agregar:active{
+background-color: #975d36;
+
+  }
+  .header-pago{
+background-color: #ec7da2;
+height:100px;
+margin: 0px;
+box-sizing: border-box;
+margin-top: -20px;
+border: solid black 2px;
+
+  }
+  .header-pago h1{
+    margin-top: 20px;
+     font-family: "Oswald", sans-serif;
+color: #fffbfb;
+text-shadow: black 1px 2px 2px;
+font-size: 50px;
+  }
+
+
+  .resultadoTotal {
+    color: rgb(0, 0, 0);
+    font-size: 28px;
+    display: flex;
+    justify-content: center;
+ margin-right: 10px;
+ font-family: "Oswald", sans-serif;
+text-shadow: #f06090 2px 2px 1px;
+}
+.items {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(248, 158, 211);
+  text-align: center;
+}
+
+.producto-item {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.producto-nombre {
+  font-size: 25px;
+  color: #333;
+}
+
+.producto-cantidad {
+  font-size: 17px;
+  color: #fd2a2a;
+}
+.total{
+font-size: 25px;
+display: flex;
+justify-content: center;
+font-family: "Noto Sans", sans-serif;
+font-weight: 600;
+margin-top: 80px;
+}
+.boton-compra{
+  font-size: 24px;
+ background-color: #ff5b50;
+ height: 40px;
+ width: 170px;
+ font-family: "Oswald", sans-serif;
+margin-right: 2px;
+border: solid black 2px;
+}
+.boton-compra a{
+text-decoration: none;
+color: #e9c7c7;
+
+}
+.footer-index{
+margin-top: 110px;
+background-color: pink;
+border: solid black 2px;
+padding: 0px;
+}
+.copyright{
+text-decoration: none;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.caja{
+border: solid rgb(59, 32, 19) 1px;
+}
+.tarjetas{
+    color: #e9c7c7;
+    text-shadow: #424141 1px 2px 2px;
+font-size: 18px;
+}
+.alert{
+display: flex;
+justify-content: center;
+font-size: 20px;
+margin-top: 10px;
+background-color: #d6fad5;
+}
+.footer-compras{
+  background-color: pink;
+  border: solid black 2px;
+  bottom: 0;
+  width: 100%;
+  margin-top: 105px;
+}
+@media (min-height: 590px) and (max-height: 770px) {
+  .footer-compras{
+    margin-top: 265px;
+  }
+
+
+}
+
+
+@media(min-height:772px){
+.footer-compras{
+  margin-top: 490px;
+
+}
+
+}
+@media(min-height:1000px){
+  .footer-compras{
+    margin-top: 555px;
+  
+  }
+  }
+
+
+  @media(min-height:1180px){
+    .footer-compras{
+      margin-top: 620px;
+    
+    }
+    }
+
+
+    @media(min-height:1200px){
+      .footer-compras{
+        margin-top:780px;
+      
+      }
+    }
+.compras-titulo{
+font-size: 40px;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+color: rgb(250, 205, 189);
+margin-top: 10px;
+text-shadow: black 2px 2px 2px;
+font-weight: 600;
+}
+@media(max-width:560px){
+  .compras-titulo{
+    font-size: 30px;
+
+  }
+}
+@media(max-width:370px){
+  .compras-titulo{
+    font-size: 26px;
+
+  }
+}
+.carrito-vacio{
+color: #ccc;
+font-size: 18px;
+}
+.envio{
+color: #e9c7c7;
+font-size: 19px;
+}

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ModeladoPao</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="shortcut icon" href="./multimedia/LOGO.jpg " type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/0f431e4a68.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+ 
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-body-tertiary">
+      <div class="container-fluid">
+        <!-- Navbar brand -->
+        <a class="navbar-brand mt-2 mt-lg-0" href="#">
+          <img src="./multimedia/logotipoweb.jpg" class="logopao" alt="Logo" loading="lazy">
+        </a>
+  
+        <!-- Toggle button for mobile view -->
+        <button class="navbar-toggler" id="boton-navbar" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <!-- Collapsible wrapper -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <!-- Left links -->
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 custom-menu">
+            <li class="nav-item">
+              <a class="nav-link" href="#">INICIO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">PRODUCTOS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">CONTACTO</a>
+            </li>
+          </ul>
+          <a href="./pages/compras.html"><i class="fas fa-shopping-cart carro"></i></a>
+        </div>
+  
+        <!-- Right elements -->
+        <div class="d-flex align-items-center ms-auto">
+          <a class="text-reset me-3" href="#"></a>
+          <div class="dropdown">
+            <img src="./multimedia/LOGO.jpg" class="rounded-circle" alt="User" />
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  
+
+    <section class="inicio">
+        <div class="presentacion">
+            <h1 class="titulo1"> MODELADOS EN  PORCELANA FRÍA</h1>
+</div>
+
+<h2 class="titulo2">AlGUNOS DE NUESTROS PRODUCTOS</h2>
+<div class="productos" data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine">
+  <span class="producto peppa">
+    <img src="./multimedia/peppa.jpg" alt="Muñeca Peppa Pig" class="imagen-productos">
+    <h2 class="titulo-producto">Muñeca Peppa Pig</h2>
+    <p>Precio: $3500</p>
+<button class="agregar" data-producto="Peppa">AGREGAR AL CARRITO</button>
+
+  </span>
+  <span class="producto sirenita"> 
+    <img src="./multimedia/sirenita.jpg" alt="Muñeca La Sirenita" class="imagen-productos">
+    <h2 class="titulo-producto">Muñeca La Sirenita</h2>
+    <p>Precio: $5000</p>
+   <button class="agregar" data-producto="Sirenita">AGREGAR AL CARRITO</button>
+
+  </span>
+
+  <span class="producto stitch">
+    <img src="./multimedia/stich.jpg" alt="Muñeco Stitch" class="imagen-productos">
+    <h2 class="titulo-producto">Muñeco Stitch</h2>
+    <p>Precio: $6000</p>
+   <button class="agregar" data-producto="Stitch">AGREGAR AL CARRITO</button>
+
+  </span>
+  <span class="producto bob-esponja">
+    <img src="./multimedia/bob esponja.jpg" alt="Combo Bob Esponja" class="imagen-productos">
+    <h2 class="titulo-producto">Combo Bob Esponja</h2>
+    <p>Precio: $8000</p>
+<button class="agregar" data-producto="Bob esponja">AGREGAR AL CARRITO</button></a>
+
+  </span>
+  <span class="producto chavo">
+    <img src="./multimedia/chavo.jpg" alt="Muñeco Chavo del 8" class="imagen-productos">
+    <h2 class="titulo-producto">Muñeco Chavo del 8</h2>
+    <p>Precio: $5000</p>
+ <button class="agregar" data-producto="Chavo">AGREGAR AL CARRITO</button>
+
+  </span>
+  <span class="producto leon">
+    <img src="./multimedia/leon.jpg" alt="Muñeco Leon" class="imagen-productos">
+    <h2 class="titulo-producto">Muñeco Leon</h2>
+    <p>Precio: $4000</p>
+<button class="agregar" data-producto="Leon">AGREGAR AL CARRITO</button>
+
+  </span>
+</div>
+
+<div class="comprar">
+  <button class="compra"> <a href="./pages/compras.html">IR A PAGAR</a></button>
+</div>
+</section>
+
+<footer class="bg-body-tertiary text-center footer-index">
+  <!-- Grid container -->
+  <div class="container p-3 pb-0">
+    <!-- Section: Social media -->
+    <section class="mb-4">
+      <!-- Facebook -->
+      <a
+      data-mdb-ripple-init
+        class="btn text-white btn-floating m-1"
+        style="background-color: #597dcc;"
+        href="https://www.facebook.com/paola.ferrari.73700"
+        role="button"
+        ><i class="fab fa-facebook-f"></i
+      ></a>
+
+
+      <a
+        data-mdb-ripple-init
+        class="btn text-white btn-floating m-1"
+        style="background-color: #4ae24a;"
+        href="https://w.app/851cI0"
+        role="button"
+        ><i class="fab fa-whatsapp"></i
+      ></a>
+
+      <!-- Google -->
+      <a
+        data-mdb-ripple-init
+        class="btn text-white btn-floating m-1"
+        style="background-color: #dd5e4e;"
+        href="#!"
+        role="button"
+        ><i class="fab fa-google"></i
+      ></a>
+
+      <!-- Instagram -->
+      <a
+        data-mdb-ripple-init
+        class="btn text-white btn-floating m-1"
+        style="background-color: #c747c7;"
+        href="https://www.instagram.com/modeladopao/!"
+        role="button"
+        ><i class="fab fa-instagram"></i
+      ></a>
+
+      
+      <!-- Github -->
+      <a
+        data-mdb-ripple-init
+        class="btn text-white btn-floating m-1"
+        style="background-color: #444343; border: solid black 2 px;"
+        href="https://github.com/facusalass"
+        role="button"
+        ><i class="fab fa-github"></i
+      ></a>
+    </section>
+    <!-- Section: Social media -->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-2 caja" style="background-color: rgba(0, 0, 0, 0.137);">
+    © 2024 Copyright:
+    <a class="text-body copyright" href="#">MODELADO PAO</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+
+<script src="./assets/js/index.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+
+</body>
+
+</html>

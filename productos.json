@@ -1,0 +1,8 @@
+[
+    { "nombre": "Peppa", "precio": 3500 },
+    { "nombre": "Sirenita", "precio": 5000 },
+    { "nombre": "Stitch", "precio": 6000 },
+    { "nombre": "Bob esponja", "precio": 8000 },
+    { "nombre": "Chavo", "precio": 5000 },
+    { "nombre": "Leon", "precio": 4000 }
+]
