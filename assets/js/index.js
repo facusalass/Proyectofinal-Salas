@@ -5,13 +5,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
     async function cargarProductos() {
         try {
-            const response = await fetch('/productos.json'); 
+            const baseUrl = window.location.origin; // Obtiene el origen de la URL actual
+            const response = await fetch(`${baseUrl}/productos.json`);
             productos = await response.json();
         } catch (error) {
             console.error('Error al cargar los productos:', error);
         }
     }
-
     function agregarAlCarrito(productoNombre) {
         const productoEncontrado = productos.find(producto => producto.nombre.toLowerCase() === productoNombre.toLowerCase());
     
