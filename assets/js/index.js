@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     async function cargarProductos() {
         try {
-            const response = await fetch('../productos.json'); 
+            const response = await fetch('/productos.json'); 
             productos = await response.json();
         } catch (error) {
             console.error('Error al cargar los productos:', error);
