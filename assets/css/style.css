@@ -451,7 +451,6 @@ margin-top: 80px;
 .boton-compra{
   font-size: 24px;
  background-color: #ff5b50;
- height: 40px;
  width: 170px;
  font-family: "Oswald", sans-serif;
 margin-right: 2px;
@@ -492,7 +491,7 @@ background-color: #d6fad5;
   border: solid black 2px;
   bottom: 0;
   width: 100%;
-  margin-top: 105px;
+  margin-top: 95px;
 }
 @media (min-height: 590px) and (max-height: 770px) {
   .footer-compras{
@@ -559,4 +558,28 @@ font-size: 18px;
 .envio{
 color: #e9c7c7;
 font-size: 19px;
+}
+
+
+.dropdown-submenu .dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -1px;
+
+}
+.dropdown-item{
+font-size: 18px;
+}
+.dropdown-menu-custom .dropdown-item:hover {
+  background-color: #f38989;
+  color: #fffefe;
+
+}
+
+.dropdown-menu-custom {
+  background-color: #fbd1df !important; 
+}
+.limite{
+font-size: 19px;
+color: #e9c7c7;
 }

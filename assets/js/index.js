@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     async function cargarProductos() {
         try {
-            const response = await fetch('productos.json');
+            const response = await fetch('../productos.json'); 
             productos = await response.json();
         } catch (error) {
             console.error('Error al cargar los productos:', error);
@@ -14,13 +14,26 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function agregarAlCarrito(productoNombre) {
         const productoEncontrado = productos.find(producto => producto.nombre.toLowerCase() === productoNombre.toLowerCase());
-
+    
         if (productoEncontrado) {
+            const cantidadEnCarrito = carrito.filter(item => item.nombre === productoEncontrado.nombre).length;
+    
+            if (cantidadEnCarrito >= 5) {
+                Swal.fire({
+                    title: 'Limite alcanzado',
+                   html: `<p class="limite">Llegaste al limite de unidades por producto (5)</p>`
+                   ,
+                    icon: 'info',
+                    confirmButtonText: 'Aceptar'
+                });
+                return; 
+            }
+        
             carrito.push(productoEncontrado);
             total += productoEncontrado.precio;
             localStorage.setItem('carrito', JSON.stringify(carrito));
             localStorage.setItem('total', total);
-
+    
             mostrarTotal();
             if (window.location.pathname.includes('compras.html')) {
                 mostrarCarrito();
@@ -31,7 +44,10 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function mostrarTotal() {
-        document.getElementById('total').textContent = `TOTAL: $${total}`;
+        const totalElement = document.getElementById('total');
+        if (totalElement) {
+            totalElement.textContent = `TOTAL: $${total}`;
+        }
     }
 
     function mostrarCarrito() {
@@ -54,7 +70,9 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
         const productosContainer = document.querySelector('.productos');
-        productosContainer.innerHTML = `<div class="items">${productosHTML}</div>`;
+        if (productosContainer) {
+            productosContainer.innerHTML = `<div class="items">${productosHTML}</div>`;
+        }
 
         mostrarTotal();
     }
@@ -151,7 +169,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         }).then((result) => {
             if (result.isConfirmed) {
-                total += 2000; // Sumamos el costo del retiro en sucursal
+                total += 2000; 
                 elegirTarjeta();
             }
         });
@@ -298,6 +316,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     cargarProductos();
 });
+
+
 
 // Ocultar el logo cuando se abre el navbar
 document.addEventListener('DOMContentLoaded', function() {

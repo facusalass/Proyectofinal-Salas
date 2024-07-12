@@ -1,4 +1,10 @@
 [
+    { "nombre": "Escandalosos", "precio": 7500 },
+    { "nombre": "Pikachu", "precio": 5000 },
+    { "nombre": "Muñeco Masha y el oso", "precio": 6000 },
+    { "nombre": "Casamientos", "precio": 6500 },
+    { "nombre": "Spiderman", "precio": 6000 },
+    { "nombre": "kitty", "precio": 5000 },
     { "nombre": "Peppa", "precio": 3500 },
     { "nombre": "Sirenita", "precio": 5000 },
     { "nombre": "Stitch", "precio": 6000 },
